@@ -1,0 +1,16 @@
+{% extends 'menu/base.html' %}
+
+{% block title %} Апож {% endblock %}
+
+{% block content %}
+{#    <div class="d-flex">#}
+        {% include 'inc/logo.html' %}
+        <div class="container">
+            <div class="d-flex flex-column position-absolute top-50 start-50 translate-middle w-25">
+                <a class="btn btn-sm btn-block mb-3" style="height: 50px; background: #EDBC94; color: white; font-size: 20px;  border: 2px solid #e7a56f; -webkit-text-stroke: 1px #e7a56f; font-weight: bold;" href="{{ play_url }}"> Играть </a>
+                <a class="btn btn-sm btn-block" style="height: 50px; background: #EDBC94; color: white; font-size: 20px; font-weight: bold; border: 2px solid #e7a56f; -webkit-text-stroke: 1px #e7a56f;" href="{{ score_url }}"> Таблица рекордов </a>
+
+            </div>
+        </div>
+{#    </div>#}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'menu/base.html' %}
+{% block title %}
+    сука
+{% endblock %}
+
+{% block content %}
+
+        <div class="container w-25 position-absolute top-50 start-50 translate-middle">
+            {% for score in scores %}
+                <div style="border: 2px solid #e7a56f; border-radius: 5px; text-align: center; vertical-align: middle; line-height: 50px; background: #EDBC94; color: white; font-size: 20px; -webkit-text-stroke: 1px #e7a56f; font-weight: bold" class="mb-1" >
+                    <span style="height: 50px; display: flex; flex-direction: column; align-items: center;"> {{ score.user }}: {{ score.score }} </span>
+                </div>
+            {% endfor %}
+        </div>
+
+{% endblock %}
+{% block script %}
+{#<script type="text/javascript">#}
+{#    const data = {{scores}};#}
+{#    console.log(data);#}
+{#</script>#}
+{% endblock %}

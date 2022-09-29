@@ -1,0 +1,12 @@
+{% extends 'menu/base.html' %}
+
+{% block content %}
+        <div class="position-absolute top-100 start-50 translate-middle row" style="margin-top: -150px;">
+        {% for answer in data.answers %}
+            <button class="col-md-5 offset-md-1 mb-1" type="submit" style="border: 2px solid #e7a56f; border-radius: 5px; text-align: center; vertical-align: middle; line-height: 50px; background: #EDBC94; color: white; font-size: 20px; -webkit-text-stroke: 1px #e7a56f; font-weight: bold">
+                {{ answer }}
+            </button>
+        {% endfor %}
+        </div>
+    <audio src="C:\Users\969\PycharmProjects\DOLG\media\musics\Rickey_F_diss.mp3" type="audio/mp3; codecs=vorbis"></audio>
+{% endblock %}
